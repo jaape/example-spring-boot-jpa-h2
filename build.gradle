@@ -31,6 +31,8 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'org.flywaydb:flyway-gradle-plugin:6.0.8'
+
 }
 
 test {
