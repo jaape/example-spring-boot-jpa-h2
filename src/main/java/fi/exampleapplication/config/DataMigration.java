@@ -12,7 +12,6 @@ public class DataMigration {
     @Bean
     public CommandLineRunner migrate(CarRepository repository) {
         return (args) -> {
-            // save a few customers
             repository.save(new Car("Toyota", "Corolla"));
             repository.save(new Car("Audi", "100"));
             repository.save(new Car("Skoda", "Octavia Combi"));
